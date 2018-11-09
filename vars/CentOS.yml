@@ -20,3 +20,16 @@ wordpress_plugin_directory: "{{ wordpress_directory }}/wp-content/plugins"
 wordpress_theme_directory: "{{ wordpress_directory }}/wp-content/themes"
 
 wordpress_httpd_service: '/usr/lib/systemd/system/httpd.service'
+
+wordpress_database_host: localhost
+wordpress_database: wordpress
+wordpress_user: wordpress
+wordpress_password: wordpress
+
+wordpress_plugins: []
+wordpress_themes: []
+
+wordpress_force_ssl: false
+wordpress_allow_file_mods: true
+wordpress_automatic_updates: true
+wordpress_debug: false
