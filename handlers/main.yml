@@ -12,4 +12,9 @@
     state: restarted
 
 - name: restart httpd
+  service: 
+    name: httpd 
+    state: restarted
+  
+- name: restart httpd
   service: name=httpd state=restarted
