@@ -1,6 +1,8 @@
 # roles/wordpress/handlers/main.yml
 ---
-
+- name: restart httpd
+  service: name=httpd state=restarted
+  
 - name: restart wordpress
   service:
     name: wordpress
@@ -15,6 +17,4 @@
   service:
     name: httpd
     state: restarted
-        
-- name: restart httpd
-  service: name=httpd state=restarted
+     
